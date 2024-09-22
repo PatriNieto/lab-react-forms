@@ -28,7 +28,7 @@ function AddStudent(props) {
   } */
    
   
-  /* const handleFullName = (event) => {
+  const handleFullName = (event) => {
     let value = event.target.value
     setFullName(value)
   }
@@ -56,11 +56,11 @@ function AddStudent(props) {
   const handleGraduated = (event) => {
     
     setGraduated(event.target.checked)
-  } */
+  } 
 
   const handleFormSubmit = (event) => {
     event.preventDefault()
-    const newStudent = {}
+    let newStudent = {}
     //tenemos que crear un objeto con los datos
     setStudent( newStudent = {
       fullName: fullName,
