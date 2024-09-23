@@ -2,7 +2,9 @@ import React from 'react'
 import { useState } from "react";
 
 function AddStudent(props) {
-  const { students, setStudents } = props
+  //const { students, setStudents, student, setStudent, handleAddStudent } = props
+  const { students, setStudents, handleAddStudent } = props
+  
   const [fullName, setFullName] = useState("");
   const [image, SetImage] = useState("");
   const [phone, setPhone] = useState("");
@@ -11,12 +13,14 @@ function AddStudent(props) {
   const [graduationYear, setGraduationYear] = useState(0);
   const [graduated, setGraduated] = useState(false);
 
-  const[student, setStudent] = useState({
+  const[student, setStudent] = useState({});
+
+/*   const[student, setStudent] = useState({
     
-  });
-  const handleStudent = (event) => {
+  }); */
+  /* const handleAddStudent = (event) => {
     setStudent()
-  }
+  } */
 /*   {
     fullName: "example",
     email: "example",
@@ -26,7 +30,6 @@ function AddStudent(props) {
     graduationYear: 2023,
     graduated: true
   } */
-   
   
   const handleFullName = (event) => {
     let value = event.target.value

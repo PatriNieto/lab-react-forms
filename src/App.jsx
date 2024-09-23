@@ -10,17 +10,22 @@ import AddStudent from "./components/AddStudent";
 function App() {
 
   const [students, setStudents] = useState(studentsData);
-
-  
+  //const[student, setStudent] = useState({});
+  const handleAddStudent = (event) => {
+    setStudent()
+  }
 
   return (
     <div className="App pt-20">
       <Navbar />
+
       <AddStudent 
       allStudents={students}
       setStudents = {setStudents}
+      /* student={student}
+      setStudent = {setStudent} */
+      handleAddStudent = {handleAddStudent}
        />
-      
 
 
       {/* TABLE/LIST HEADER */}
